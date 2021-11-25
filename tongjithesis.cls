@@ -183,10 +183,10 @@
 
 % 参考文献引用宏包。使用biblatex包
 \iftongji@numeric
-  \RequirePackage[backend=biber,style=gb7714-2015,gbpub=false,isbn=false,doi=false,gbtitlelink=true,url=false,sortlocale=zh__pinyin]{biblatex} 
+  \RequirePackage[backend=biber,style=gb7714-2015,gbpub=false,isbn=false,doi=false,gbtitlelink=true,url=false,sortlocale=zh__pinyin,gbnamefmt=lowercase]{biblatex} 
 \else
   \iftongji@authoryear % 若需使用author-year格式的文献引用，可将style选择为：gb7714-2015ay
-    \RequirePackage[backend=biber,style=gb7714-2015ay,gbpub=false,isbn=false,doi=false,gbtitlelink=true,url=false,sortlocale=zh__pinyin]{biblatex} 
+    \RequirePackage[backend=biber,style=gb7714-2015ay,gbpub=false,isbn=false,doi=false,gbtitlelink=true,url=false,sortlocale=zh__pinyin,gbnamefmt=lowercase]{biblatex} 
   \fi
 \fi
 % 参考文献宏包的其他选项：
